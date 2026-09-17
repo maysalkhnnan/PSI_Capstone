@@ -1,36 +1,32 @@
-# Data Analytics & Log Processing Pipeline
+# Data Analytics & Log Processing Automation Pipeline
 
-This project is a Lightweight Data Analytics and Log Processing Automation Pipeline written in Python. It reads access log data from a CSV file, filters security events, and calculates performance metrics.
+This project is an Automated Log Analytics and Data Processing Pipeline written in Python. It ingests system/security access logs from a CSV file, cleans and processes the data using Pandas, generates statistical JSON summaries, and produces visual reports with Matplotlib.
 
-## Project Structure
+---
+
+## Features
+
+- **Data Ingestion & Cleaning**: Reads log files using Pandas and cleans whitespace or missing values.
+- **Statistical Analytics**: Analyzes event distributions and identifies top frequent paths/actions.
+- **JSON Data Persistence**: Exports key analytics metrics directly to `summary_report.json`.
+- **Automated Visualization**: Generates a bar chart distribution saved as `events_chart.png`.
+- **Modular OOP Architecture**: Built using Object-Oriented Principles with the `DataPipeline` class for clean code structure.
+
+---
+
+## Repository Structure
 
 ```text
 capstone_project/
 ├── data/
-│   └── sample_data.csv
+│   ├── events_chart.png       # Generated visualization chart
+│   ├── sample_evidence.csv    # Input log dataset
+│   └── summary_report.json    # Exported summary metrics
 ├── src/
 │   ├── __init__.py
-│   ├── main.py
-│   ├── utils.py
-│   └── logic.py
+│   ├── logic.py               # DataPipeline class & business logic
+│   ├── main.py                # Main application entry point
+│   └── utils.py               # Helper functions & file operations
 ├── .gitignore
-├── requirements.txt
-└── README.md
-```
-
-## Features
-- **Data Ingestion**: Parses structured log records from standard CSV files using native Python modules.
-- **Data Filtering**: Filters for specific log event types (e.g., failed login attempts).
-- **Metric Aggregation**: Computes metrics like average HTTP response times.
-
-## How to Run
-
-1. Clone or download the repository.
-2. Navigate into the `src/` folder:
-   ```bash
-   cd src
-   ```
-3. Run the main execution script:
-   ```bash
-   python main.py
-   ```
+├── README.md                  # Project documentation
+└── requirements.txt           # External Python dependencies
