@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
-from src.utils import check_file_exists
+from utils import check_file_exists  
 
 class DataPipeline:
 
