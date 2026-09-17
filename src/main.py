@@ -6,7 +6,7 @@ def main():
     json_path = "../data/summary_report.json"
     img_path = "../data/events_chart.png"
 
-    # 1. Initialize Pipeline
+    # 1. Initialize Pipeline 
     pipeline = DataPipeline(csv_path)
 
     # 2. Load & Clean Data

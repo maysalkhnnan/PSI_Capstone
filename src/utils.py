@@ -11,5 +11,6 @@ def save_summary_json(data: dict, output_path: str) -> bool:
             json.dump(data, f, indent=4)
         return True
     except Exception as e:
+        
         print(f"[-] Error saving JSON report: {e}")
         return False

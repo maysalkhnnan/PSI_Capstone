@@ -2,7 +2,7 @@
 
 This project is an Automated Log Analytics and Data Processing Pipeline written in Python. It ingests system/security access logs from a CSV file, cleans and processes the data using Pandas, generates statistical JSON summaries, and produces visual reports with Matplotlib.
 
----
+--- 
 
 ## Features
 

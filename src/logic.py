@@ -60,3 +60,4 @@ class DataPipeline:
         except Exception as e:
             print(f"[-] Error generating plot: {e}")
             return False
+        
